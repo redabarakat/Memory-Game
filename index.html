@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/test.css">
+    <title>javascript</title>
+</head>
+<body>
+    <div class="overlay"><span>start Game</span></div>
+    <div class="gameover"><span>game over</span> <span id="try">try again</span></div>
+    <div class="winner"><span>you did it. <br> congratulation..</span> <button>play again</button></div>
+    <p class="title">memory game</p>
+    <div class="container">
+        <div class="info-container">
+            <div class="name">
+                Hello: <span></span>
+            </div>
+            <div class="timer">
+                timer: <span>0</span> Sec
+            </div>
+            <div class="tries">
+                Wrong tries : <span>0</span> of 20
+            </div>
+        </div>
+        <div class="image-container">
+            <div class="card" data-member="1">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/photo2.png">
+                </div>
+            </div>
+            <div class="card" data-member="1">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/photo2.png">
+                </div>
+            </div>
+            <div class="card" data-member="2">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/photo3.png">
+                </div>
+            </div>
+            <div class="card" data-member="2">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/photo3.png">
+                </div>
+            </div>
+            <div class="card" data-member="3">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/photo4.png">
+                </div>
+            </div>
+            <div class="card" data-member="3">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/photo4.png">
+                </div>
+            </div>
+            <div class="card" data-member="4">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/photo5.png">
+                </div>
+            </div>
+            <div class="card" data-member="4">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/photo5.png">
+                </div>
+            </div>
+            <div class="card" data-member="5">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/member-5.png">
+                </div>
+            </div>
+            <div class="card" data-member="5">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/member-5.png">
+                </div>
+            </div>
+            <div class="card" data-member="6">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/member-6.png">
+                </div>
+            </div>
+            <div class="card" data-member="6">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/member-6.png">
+                </div>
+            </div>
+            <div class="card" data-member="7">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/member-7.png">
+                </div>
+            </div>
+            <div class="card" data-member="7">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/member-7.png">
+                </div>
+            </div>
+            <div class="card" data-member="8">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/member-8.png">
+                </div>
+            </div>
+            <div class="card" data-member="8">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/member-8.png">
+                </div>
+            </div>
+            <div class="card" data-member="9">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/member-9.png">
+                </div>
+            </div>
+            <div class="card" data-member="9">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/member-9.png">
+                </div>
+            </div>
+            <div class="card" data-member="10">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/photo1.png">
+                </div>
+            </div>
+            <div class="card" data-member="10">
+                <div class="face front"></div>
+                <div class="face back">
+                    <img src="/image/photo1.png">
+                </div>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>name</th>
+                <th>time</th>
+                <th>wrong tries</th>
+                <th>result</th>
+                <th>history</th>
+            </tr>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+    <audio id="start"  src="/image/yt1s.com - ALI LOKA  MATKHAFESH YAMMA  على لوكا  متخافيش ياما  OFFICIAL MUSIC VIDEO .mp3" preload="auto"></audio>
+    <audio id="bravo" src="/image/yt1s.com - مدحت شلبى  برافو عليك.mp3" preload="auto"></audio>
+    <audio id="win" src="/image/yt1s.com - احتفال المزاريطة بالفوز على امريكاflv.mp3" preload="auto"></audio>
+    <audio id="lose" src="/image/yt1s.com - ده مفيش في قاموسي ضعف ولا هزيمه يامعافر كمل للاخر .mp3" preload="auto"></audio>
+    <script src="/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body> 
+</html>
